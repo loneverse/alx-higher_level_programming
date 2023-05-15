@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     from sys import argv
     if len(argv) != 4:
-        print("Run: ./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         quit(1)
     a = int(argv[1])
     b = int(argv[3])
@@ -14,5 +14,5 @@ if __name__ == "__main__":
             print("{} {} {} = {}".format(a, s, b, funcs[i](a, b)))
             break
     else:
-        print("Unknown operation. Available operators are: +, -, * and /")
+        print("Unknown operator. Available operators: +, -, * and /")
         quit(1)
